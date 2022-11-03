@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+* {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+// Colors
+$dark-jungle-green: #191826;
+$snow-drift: #FCFAF9;
+
+// weight
+$normal: 400;
+$bold: 700;
+
+
+// TEXT
+.title {
+  font-weight: $bold;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: -.028rem;
+  color: $dark-jungle-green;
+  // tablet
+  @media (min-width: 768px) {
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: -.045rem;
+  }
+  // desktop xl
+  @media (min-width: 1200px) {
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+    letter-spacing: -.063rem;
+  }
+}
+.main-text {
+  font-weight: $normal;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: $dark-jungle-green;
+  // tablet
+  @media (min-width: 768px) {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  // desktop xl
+  @media (min-width: 1200px) {
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+  }
+}
+
+
+// Card
+.card-title {
+  font-weight: $bold;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: $snow-drift;
+  // desktop xl
+  @media (min-width: 1200px) {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+  }
+}
+.card-text {
+  font-weight: $normal;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: $snow-drift;
+  // desktop xl
+  @media (min-width: 1200px) {
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+  }
+}
+.card-price {
+  font-weight: $bold;
+  font-size: 4.063rem;
+  line-height: 3.25rem;
+  color: $snow-drift;
+
+  &-small {
+    font-weight: $normal;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    letter-spacing: -.013rem;
+  }
+}
+
+.btn-text {
+  font-weight: $bold;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  text-align: center;
+  letter-spacing: -0.011rem;
+  &-iOS {
+    color: $snow-drift;
+  }
+  &-Android {
+    color: $dark-jungle-green;
+  }
+}
+
+
+// footer
+.footer-text {
+  font-weight: $normal;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: $dark-jungle-green;
+
+  &-email {
+    font-weight: $bold;
+  }
+}
